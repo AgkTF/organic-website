@@ -58,3 +58,9 @@ nav {
   background: $primary;
   color: white;
 }
+
+.subscribe_input {
+  &::placeholder {
+    font-size: 12px;
+  }
+}

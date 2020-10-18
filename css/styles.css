@@ -51,3 +51,7 @@ nav li a:focus::after {
   background: #00dbd0;
   color: white;
 }
+
+.subscribe_input::placeholder {
+  font-size: 12px;
+}
