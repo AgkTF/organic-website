@@ -1,0 +1,22 @@
+{
+  "name": "organic",
+  "version": "1.0.0",
+  "description": "Organic website",
+  "main": "index.js",
+  "scripts": {
+    "watch:tw": "postcss css/tailwind.css -o css/tailwind.output.css --watch"
+  },
+  "keywords": [
+    "Website",
+    "landing page"
+  ],
+  "author": "Agk",
+  "license": "MIT",
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^3.0.0",
+    "postcss-cli": "^8.1.0"
+  },
+  "dependencies": {
+    "tailwindcss": "^1.9.4"
+  }
+}
