@@ -33,3 +33,28 @@ nav {
     }
   }
 }
+
+.food_card {
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='20' ry='20' stroke='%23374B5CFF' stroke-width='1' stroke-dasharray='5 10' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+  border-radius: 20px;
+  width: 184px;
+  min-width: 184px;
+
+  .food_text {
+    max-width: 9rem;
+  }
+
+  @media screen and (min-width: 1280px) {
+    & {
+      width: 208px;
+    }
+    .food_text {
+      max-width: 10rem;
+    }
+  }
+}
+
+.food_card.food_card--green {
+  background: $primary;
+  color: white;
+}
