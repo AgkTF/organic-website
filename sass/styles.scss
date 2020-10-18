@@ -1,0 +1,35 @@
+$primary: #00dbd0;
+$light: #f1fefe;
+$text: #374b5c;
+
+nav {
+  .mobile__menu.mobile__menu--hidden {
+    display: none;
+  }
+
+  li {
+    position: relative;
+    a {
+      &::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        display: block;
+        height: 2px;
+        background: $primary;
+        width: 0;
+        transition: all 0.15s ease-in-out;
+      }
+
+      &:hover::after {
+        left: 0;
+        width: 100%;
+      }
+
+      &:focus::after {
+        left: 0;
+        width: 100%;
+      }
+    }
+  }
+}
