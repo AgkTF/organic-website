@@ -55,3 +55,24 @@ nav li a:focus::after {
 .subscribe_input::placeholder {
   font-size: 12px;
 }
+
+.read_link {
+  position: relative;
+  z-index: 10;
+}
+
+.read_link::after {
+  position: absolute;
+  content: "";
+  background: #00dbd0;
+  height: 5px;
+  width: 100%;
+  left: 0;
+  bottom: 2px;
+  z-index: -1;
+  transition: all 0.15s ease-in-out;
+}
+
+.read_link:hover::after {
+  height: 90%;
+}

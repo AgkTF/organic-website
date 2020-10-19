@@ -64,3 +64,24 @@ nav {
     font-size: 12px;
   }
 }
+
+.read_link {
+  position: relative;
+  z-index: 10;
+
+  &::after {
+    position: absolute;
+    content: "";
+    background: $primary;
+    height: 5px;
+    width: 100%;
+    left: 0;
+    bottom: 2px;
+    z-index: -1;
+    transition: all 0.15s ease-in-out;
+  }
+
+  &:hover::after {
+    height: 90%;
+  }
+}
