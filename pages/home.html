@@ -14,9 +14,9 @@
     <title>Organic | Home</title>
   </head>
   <body
-    class="mx-auto bg-gradient-to-b from-lturquoise bg-no-repeat font-libre max-w-screen-2xl text-gblue"
+    class="bg-gradient-to-b from-lturquoise bg-no-repeat font-libre text-gblue"
   >
-    <div class="mx-6 lg:mx-10 xl:mx-24 2xl:mx-32">
+    <div class="mx-6 lg:mx-10 xl:mx-24">
       <nav class="pt-4 flex flex-col relative">
         <div class="flex justify-between items-center">
           <div>
@@ -48,10 +48,18 @@
 
           <div class="hidden md:block">
             <ul class="flex items-center text-sm lg:text-base">
-              <li class="ml-6 lg:ml-10"><a href="/">Home</a></li>
-              <li class="ml-6 lg:ml-10"><a href="/products">Products</a></li>
-              <li class="ml-6 lg:ml-10"><a href="/blog">Blog</a></li>
-              <li class="ml-6 lg:ml-10"><a href="/about">About Us</a></li>
+              <li class="ml-6 lg:ml-10">
+                <a href="/" class="nav_link nav_activeLink">Home</a>
+              </li>
+              <li class="ml-6 lg:ml-10">
+                <a href="/products">Products</a>
+              </li>
+              <li class="ml-6 lg:ml-10">
+                <a href="/blog">Blog</a>
+              </li>
+              <li class="ml-6 lg:ml-10">
+                <a href="/about">About Us</a>
+              </li>
               <li class="ml-6 lg:ml-10">
                 <button
                   class="px-5 py-2 lg:px-8 lg:py-2 rounded-lg border-2 border-turquoise"
@@ -100,6 +108,8 @@
             Explore Now
           </button>
         </div>
+
+        <img src="../images/hero-flower.png" alt="hero flower" class="w-1/2" />
       </section>
 
       <section class="mt-8 text-center">
@@ -188,7 +198,14 @@
         </div>
       </section>
 
-      <section class="mt-16 text-center flex flex-col items-center">
+      <section
+        class="mt-20 text-center flex flex-col items-center quote_container relative"
+      >
+        <img
+          src="../images/leaf-top.png"
+          alt="green leaf"
+          class="self-end top-leaf"
+        />
         <img src="../images/quotes.svg" alt="quotes" class="h-8 lg:h-10" />
         <div
           class="mt-5 h-16 w-16 lg:h-20 lg:w-20 rounded-full overflow-hidden"
@@ -258,18 +275,23 @@
           </svg>
         </div>
         <p
-          class="mx-auto mt-3 md:mt-5 text-xs lg:text-base max-w-xs sm:max-w-lg lg:max-w-xl"
+          class="mx-auto mt-3 md:mt-5 text-xs lg:text-base sm:max-w-lg lg:max-w-xl quote_text"
         >
           Thank you for all the amazing produce and products you deliver each
           week… you make my life so easy an bring goodness into our family
           eating. I’ve been roasting a lot of brussel sprouts and
         </p>
+        <img
+          src="../images/leaf-bottom.png"
+          alt="green leaf"
+          class="self-start bottom-leaf"
+        />
       </section>
 
-      <section class="py-6 mt-24 text-center bg-lturquoise">
+      <section class="py-6 mt-20 lg:mt-40 text-center bg-lturquoise">
         <h2 class="text-xl">Subscribe to Our Newsletter</h2>
         <p
-          class="mx-auto mt-2 md:mt-3 text-xs lg:text-base max-w-xs sm:max-w-lg lg:max-w-xl"
+          class="mx-auto mt-2 md:mt-3 text-xs lg:text-base max-w-xs sm:max-w-screen-xs lg:max-w-2xl"
         >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
