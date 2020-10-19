@@ -22,6 +22,9 @@ module.exports = {
         lturquoise: "#F1FEFE",
         gblue: "#374B5C",
       },
+      fontSize: {
+        "2xs": "0.625rem",
+      },
     },
   },
   variants: {},

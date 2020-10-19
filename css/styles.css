@@ -76,3 +76,35 @@ nav li a:focus::after {
 .read_link:hover::after {
   height: 90%;
 }
+
+.footer {
+  background: url("../images/footer-bg.svg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.footer .footer_title {
+  position: relative;
+}
+
+.footer .footer_title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  display: block;
+  height: 2px;
+  background: #00dbd0;
+  width: 50%;
+  bottom: -4px;
+}
+
+.footer .footer_subtitle {
+  max-width: 17rem;
+}
+
+@media screen and (min-width: 768px) {
+  .footer .footer_subtitle {
+    max-width: none;
+  }
+}
