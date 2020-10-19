@@ -194,3 +194,31 @@ nav {
     max-width: 17rem;
   }
 }
+
+form {
+  input::placeholder {
+    font-size: 12px;
+  }
+}
+
+.nav_top-leaf {
+  width: 0;
+
+  @media screen and (min-width: 1024px) {
+    position: absolute;
+    right: -10rem;
+    width: 35%;
+    top: 6rem;
+  }
+}
+
+.form_ornament {
+  width: 0;
+
+  @media screen and (min-width: 1024px) {
+    position: absolute;
+    width: 25%;
+    top: 26rem;
+    left: -5rem;
+  }
+}
