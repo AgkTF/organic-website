@@ -134,10 +134,15 @@ nav li a.nav_activeLink::after {
   right: -5rem;
 }
 
+@media screen and (min-width: 414px) {
+  .top-leaf {
+    width: 40%;
+  }
+}
+
 @media screen and (min-width: 640px) {
   .top-leaf {
     width: 40%;
-    position: absolute;
     bottom: 3rem;
     right: -10rem;
   }
@@ -146,7 +151,6 @@ nav li a.nav_activeLink::after {
 @media screen and (min-width: 1024px) {
   .top-leaf {
     width: 50%;
-    position: absolute;
     bottom: -2rem;
     right: -20rem;
   }
@@ -159,10 +163,17 @@ nav li a.nav_activeLink::after {
   left: -7rem;
 }
 
+@media screen and (min-width: 414px) {
+  .bottom-leaf {
+    width: 40%;
+    bottom: -9rem;
+    left: -8rem;
+  }
+}
+
 @media screen and (min-width: 640px) {
   .bottom-leaf {
     width: 40%;
-    position: absolute;
     left: -7rem;
     top: 14rem;
   }
@@ -171,7 +182,6 @@ nav li a.nav_activeLink::after {
 @media screen and (min-width: 1024px) {
   .bottom-leaf {
     width: 50%;
-    position: absolute;
     left: -20rem;
     top: 13rem;
   }
@@ -208,7 +218,7 @@ form input::placeholder {
   .form_ornament {
     position: absolute;
     width: 25%;
-    top: 26rem;
+    top: 18rem;
     left: -5rem;
   }
 }

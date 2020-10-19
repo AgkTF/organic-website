@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/tailwind.output.css" />
-    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/styles.min.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
@@ -20,7 +20,7 @@
       <nav class="pt-4 flex flex-col relative">
         <div class="flex justify-between items-center">
           <div>
-            <a href="/" class="flex items-center">
+            <a href="/pages/home.html" class="flex items-center">
               <img
                 src="../images/organic-logo.svg"
                 class="h-10 sm:h-12 lg:h-16 pr-1 lg:pr-3"
@@ -49,23 +49,24 @@
           <div class="hidden md:block">
             <ul class="flex items-center text-sm lg:text-base">
               <li class="ml-6 lg:ml-10">
-                <a href="/" class="nav_activeLink">Home</a>
+                <a href="/pages/home.html" class="nav_activeLink">Home</a>
               </li>
               <li class="ml-6 lg:ml-10">
-                <a href="/products">Products</a>
+                <a href="/pages/products.html">Products</a>
               </li>
               <li class="ml-6 lg:ml-10">
-                <a href="/blog">Blog</a>
+                <a href="/pages/blog.html">Blog</a>
               </li>
               <li class="ml-6 lg:ml-10">
-                <a href="/about">About Us</a>
+                <a href="/pages/about.html">About Us</a>
               </li>
               <li class="ml-6 lg:ml-10">
-                <button
+                <a
+                  href="/pages/contact.html"
                   class="px-5 py-2 lg:px-8 lg:py-2 rounded-lg border-2 border-turquoise hover:text-white hover:bg-turquoise hover:border-opacity-0"
                 >
                   Contact
-                </button>
+                </a>
               </li>
             </ul>
           </div>
@@ -76,15 +77,22 @@
         >
           <ul class="flex flex-col items-center">
             <li class="my-2 text-sm">
-              <a href="/" class="nav_activeLink">Home</a>
+              <a href="/pages/home.html" class="nav_activeLink">Home</a>
             </li>
-            <li class="my-2 text-sm"><a href="/products">Products</a></li>
-            <li class="my-2 text-sm"><a href="/blog">Blog</a></li>
-            <li class="my-2 text-sm"><a href="/about">About Us</a></li>
             <li class="my-2 text-sm">
-              <button class="px-8 py-2 rounded-lg border-2 border-turquoise">
+              <a href="/pages/products.html">Products</a>
+            </li>
+            <li class="my-2 text-sm"><a href="/pages/blog.html">Blog</a></li>
+            <li class="my-2 text-sm">
+              <a href="/pages/about.html">About Us</a>
+            </li>
+            <li class="my-2 text-sm">
+              <a
+                href="/pages/contact.html"
+                class="px-8 py-2 rounded-lg border-2 border-turquoise"
+              >
                 Contact
-              </button>
+              </a>
             </li>
           </ul>
         </div>
@@ -128,7 +136,11 @@
 
         <div class="mt-8 flex flex-wrap gap-6 items-center justify-center">
           <div class="py-6 px-5 xl:px-6 food_card">
-            <img src="../images/food.svg" class="mx-auto h-16 xl:h-20" />
+            <img
+              src="../images/food.svg"
+              class="mx-auto h-16 xl:h-20"
+              loading="lazy"
+            />
             <h3 class="mt-3 font-bold text-sm xl:text-lg">Organic Food</h3>
             <p class="mt-1 xl:mt-2 text-xs xl:text-sm food_text">
               Lorem ipsum dolor sit amet, consectetur
@@ -139,6 +151,7 @@
             <img
               src="../images/food - white.svg"
               class="mx-auto h-16 xl:h-20"
+              loading="lazy"
             />
             <h3 class="mt-3 font-bold text-sm xl:text-lg">Organic Food</h3>
             <p class="mt-1 xl:mt-2 text-xs xl:text-sm food_text">
@@ -147,7 +160,11 @@
           </div>
 
           <div class="py-6 px-5 food_card">
-            <img src="../images/food.svg" class="mx-auto h-16 xl:h-20" />
+            <img
+              src="../images/food.svg"
+              class="mx-auto h-16 xl:h-20"
+              loading="lazy"
+            />
             <h3 class="mt-3 font-bold text-sm xl:text-lg">Organic Food</h3>
             <p class="mt-1 xl:mt-2 text-xs xl:text-sm food_text">
               Lorem ipsum dolor sit amet, consectetur
@@ -155,7 +172,11 @@
           </div>
 
           <div class="py-6 px-5 food_card">
-            <img src="../images/food.svg" class="mx-auto h-16 xl:h-20" />
+            <img
+              src="../images/food.svg"
+              class="mx-auto h-16 xl:h-20"
+              loading="lazy"
+            />
             <h3 class="mt-3 font-bold text-sm xl:text-lg">Organic Food</h3>
             <p class="mt-1 xl:mt-2 text-xs xl:text-sm food_text">
               Lorem ipsum dolor sit amet, consectetur
@@ -181,21 +202,25 @@
             src="../images/sponsor-1.svg"
             alt="greenery logo"
             class="h-20 sm:h-24 lg:h-32"
+            loading="lazy"
           />
           <img
             src="../images/sponsor-3.svg"
             alt="greenery logo"
             class="h-16 sm:h-20 lg:h-24"
+            loading="lazy"
           />
           <img
             src="../images/sponsor-2.svg"
             alt="greenery logo"
             class="h-20 sm:h-24 lg:h-32"
+            loading="lazy"
           />
           <img
             src="../images/sponsor-1.svg"
             alt="greenery logo"
             class="h-20 sm:h-24 lg:h-32 hidden lg:block"
+            loading="lazy"
           />
         </div>
       </section>
@@ -207,6 +232,7 @@
           src="../images/leaf-top.png"
           alt="green leaf"
           class="self-end top-leaf"
+          loading="lazy"
         />
         <img src="../images/quotes.svg" alt="quotes" class="h-8 lg:h-10" />
         <div
@@ -216,6 +242,7 @@
             src="../images/avatar.jpg"
             alt="woman face"
             class="w-full h-full object-cover"
+            loading="lazy"
           />
         </div>
         <span class="block mt-1 font-bold sm:text-lg lg:text-xl">Jane Doe</span>
@@ -277,7 +304,7 @@
           </svg>
         </div>
         <p
-          class="mx-auto mt-3 md:mt-5 text-xs lg:text-base sm:max-w-lg lg:max-w-xl quote_text"
+          class="mx-auto mt-3 md:mt-5 text-xs lg:text-base xs:max-w-sm sm:max-w-lg lg:max-w-xl quote_text"
         >
           Thank you for all the amazing produce and products you deliver each
           week… you make my life so easy an bring goodness into our family
@@ -287,6 +314,7 @@
           src="../images/leaf-bottom.png"
           alt="green leaf"
           class="self-start bottom-leaf"
+          loading="lazy"
         />
       </section>
 
@@ -332,6 +360,7 @@
                 src="../images/blog-1 2x.jpg"
                 alt="blog 1"
                 class="h-full w-full object-cover"
+                loading="lazy"
               />
             </div>
             <div class="px-5 py-2 text-center">
@@ -356,6 +385,7 @@
                 src="../images/blog-2 2x.jpg"
                 alt="blog 2"
                 class="h-full w-full object-cover"
+                loading="lazy"
               />
             </div>
             <div class="px-5 py-2 text-center">
@@ -380,6 +410,7 @@
                 src="../images/blog-3 2x.jpg"
                 alt="blog 3"
                 class="h-full w-full object-cover"
+                loading="lazy"
               />
             </div>
             <div class="px-5 py-2 text-center">
@@ -412,6 +443,7 @@
                 <img
                   src="../images/organic-logo - white.svg"
                   class="h-10 lg:h-12 pr-1 sm:pr-2 lg:pr-3"
+                  loading="lazy"
                 />
                 <span class="text-lg xl:text-xl font-bold">organic</span>
               </a>
