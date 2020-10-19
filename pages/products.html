@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/tailwind.output.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <title>Organic | Our products</title>
+  </head>
+  <body
+    class="bg-gradient-to-b from-lturquoise bg-no-repeat font-libre text-gblue"
+  >
+    <div class="mx-6 lg:mx-10 xl:mx-24">
+      <nav class="pt-4 flex flex-col relative">
+        <div class="flex justify-between items-center">
+          <div>
+            <a href="/" class="flex items-center">
+              <img
+                src="../images/organic-logo.svg"
+                class="h-10 sm:h-12 lg:h-16 pr-1 lg:pr-3"
+              />
+              <span class="text-xl sm:text-2xl xl:text-4xl font-bold text-gblue"
+                >organic</span
+              >
+            </a>
+          </div>
+
+          <button class="toggler md:hidden">
+            <svg
+              class="w-6 h-6 sm:w-8 sm:h-8 text-turquoise"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+
+          <div class="hidden md:block">
+            <ul class="flex items-center text-sm lg:text-base">
+              <li class="ml-6 lg:ml-10">
+                <a href="/" class="nav_link nav_activeLink">Home</a>
+              </li>
+              <li class="ml-6 lg:ml-10">
+                <a href="/products">Products</a>
+              </li>
+              <li class="ml-6 lg:ml-10">
+                <a href="/blog">Blog</a>
+              </li>
+              <li class="ml-6 lg:ml-10">
+                <a href="/about">About Us</a>
+              </li>
+              <li class="ml-6 lg:ml-10">
+                <button
+                  class="px-5 py-2 lg:px-8 lg:py-2 rounded-lg border-2 border-turquoise hover:text-white hover:bg-turquoise hover:border-opacity-0"
+                >
+                  Contact
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="mt-4 sm:self-end w-full sm:w-1/2 bg-turquoise bg-opacity-25 rounded-lg mobile__menu mobile__menu--hidden"
+        >
+          <ul class="flex flex-col items-center">
+            <li class="my-2 text-sm"><a href="/">Home</a></li>
+            <li class="my-2 text-sm"><a href="/products">Products</a></li>
+            <li class="my-2 text-sm"><a href="/blog">Blog</a></li>
+            <li class="my-2 text-sm"><a href="/about">About Us</a></li>
+            <li class="my-2 text-sm">
+              <button class="px-8 py-2 rounded-lg border-2 border-turquoise">
+                Contact
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <footer
+        class="pt-16 pb-4 md:pt-24 px-8 xs:px-16 sm:px-10 mt-8 lg:mt-24 text-white footer"
+      >
+        <div
+          class="flex flex-col gap-4 sm:flex-row sm:justify-between md:justify-around"
+        >
+          <div class="flex flex-col justify-between">
+            <div>
+              <a href="/" class="flex items-center">
+                <img
+                  src="../images/organic-logo - white.svg"
+                  class="h-10 lg:h-12 pr-1 sm:pr-2 lg:pr-3"
+                />
+                <span class="text-lg xl:text-xl font-bold">organic</span>
+              </a>
+              <p
+                class="mt-2 text-white text-2xs leading-relaxed footer_subtitle"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor
+              </p>
+            </div>
+            <p class="text-xs hidden sm:block">&#169; Copyright 2020 Nature</p>
+          </div>
+
+          <div class="mt-4 flex justify-between gap-10 md:hidden">
+            <section>
+              <h4 class="font-bold text-sm footer_title">Information</h4>
+              <ul class="text-xs">
+                <li class="mt-4">About us</li>
+                <li class="mt-1">Products</li>
+                <li class="mt-1">Contact Us</li>
+                <li class="mt-1">Terms of Service</li>
+              </ul>
+            </section>
+            <section>
+              <h4 class="font-bold text-sm footer_title">Follow us</h4>
+              <div class="mt-4 grid grid-cols-2 gap-2">
+                <div
+                  class="rounded-full h-6 w-6 text-gblue bg-white text-center"
+                >
+                  <i class="fab fa-facebook-f"></i>
+                </div>
+                <div
+                  class="rounded-full h-6 w-6 text-gblue bg-white text-center"
+                >
+                  <i class="fab fa-linkedin-in"></i>
+                </div>
+                <div
+                  class="rounded-full h-6 w-6 text-gblue bg-white text-center"
+                >
+                  <i class="fab fa-twitter"></i>
+                </div>
+                <div
+                  class="rounded-full h-6 w-6 text-gblue bg-white text-center"
+                >
+                  <i class="fab fa-instagram"></i>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <section class="hidden md:block">
+            <h4 class="font-bold text-sm footer_title">Information</h4>
+            <ul class="text-xs">
+              <li class="mt-4">About us</li>
+              <li class="mt-1">Products</li>
+              <li class="mt-1">Contact Us</li>
+              <li class="mt-1">Terms of Service</li>
+            </ul>
+          </section>
+
+          <section class="hidden md:block">
+            <h4 class="font-bold text-sm footer_title">Follow us</h4>
+            <div class="mt-4 grid grid-cols-2 gap-2">
+              <div class="rounded-full h-6 w-6 text-gblue bg-white text-center">
+                <i class="fab fa-facebook-f"></i>
+              </div>
+              <div class="rounded-full h-6 w-6 text-gblue bg-white text-center">
+                <i class="fab fa-linkedin-in"></i>
+              </div>
+              <div class="rounded-full h-6 w-6 text-gblue bg-white text-center">
+                <i class="fab fa-twitter"></i>
+              </div>
+              <div class="rounded-full h-6 w-6 text-gblue bg-white text-center">
+                <i class="fab fa-instagram"></i>
+              </div>
+            </div>
+          </section>
+
+          <p class="mt-6 text-2xs sm:hidden">&#169; Copyright 2020 Nature</p>
+        </div>
+      </footer>
+    </div>
+    <script src="../js/index.js"></script>
+  </body>
+</html>
